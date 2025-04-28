@@ -14,9 +14,12 @@ def trytrue():
 while True:
     try:
         n=int(input("Cuantas notas desea ingresar?\n"))
-        break
+        if n>0:
+            break
+        else:
+            print("\nIngrese una cantidad valida\n")
     except ValueError:
-        print("\nIngrese una cantidad valida")
+        print("\nIngrese una cantidad valida\n")
 
 notas = []
 for i in range(n):
