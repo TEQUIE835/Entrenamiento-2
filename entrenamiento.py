@@ -56,9 +56,9 @@ def promedio():
         prom+= notas[1]
     prom = prom/n
     print(f"\nTu promedio es: {prom}")
-    if prom<= 60:
+    if prom>= 60:
         print("Has aprobado")
-    elif prom > 60:
+    elif prom < 60:
         print("No has aprobado")
     else:
         print("que tocaste we")
@@ -75,6 +75,14 @@ def mayores():
     
     print(f"\nHay {cont} notas mayores")
 
+#Verificacion de cuantas veces se repite la nota
+def verificacion():
+    notav=trytrue()
+    cont2=0
+    for i in range(len(notas)):
+        if notav==notas[i]:
+            cont2 += 1
+    print(f"\nLa nota {notav} se repite {cont2} veces")
 
 def salir():
     print("\nNos vemos...")
@@ -87,7 +95,8 @@ def mostrarmenu():
     print("2. Calcular promedio")
     print("3. Contar numeros mayores")
     print("4. Mostrar notas")
-    print("5. Salir")
+    print("5. Verificar cuantas veces esta la nota")
+    print("6. Salir")
 
 
 while True:
@@ -95,7 +104,7 @@ while True:
     while True:
         try:
             opc=int(input("\nIngrese su opcion: "))
-            if 1<=opc<=5:
+            if 1<=opc<=6:
                 break
             else:
                 print("Ingrese una opcion valida")
@@ -112,8 +121,9 @@ while True:
         print("\nTus notas son: ")
         for i in range(len(notas)):
             print(notas[i])
-            
     elif opc==5:
+        verificacion()
+    elif opc==6:
         salir()
     else:
         print("Hubo un error")
