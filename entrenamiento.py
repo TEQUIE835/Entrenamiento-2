@@ -56,6 +56,13 @@ def promedio():
         prom+= notas[1]
     prom = prom/n
     print(f"\nTu promedio es: {prom}")
+    if prom<= 60:
+        print("Has aprobado")
+    elif prom > 60:
+        print("No has aprobado")
+    else:
+        print("que tocaste we")
+        
 
 
 #Contar numeros mayores
