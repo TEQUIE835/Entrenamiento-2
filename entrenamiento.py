@@ -110,20 +110,20 @@ while True:
                 print("Ingrese una opcion valida")
         except ValueError:
             print("Ingrese una opcion valida")
-
-    if opc==1:
-        aprobado()
-    elif opc==2:
-        promedio()
-    elif opc==3:
-        mayores()
-    elif opc==4:
-        print("\nTus notas son: ")
-        for i in range(len(notas)):
-            print(notas[i])
-    elif opc==5:
-        verificacion()
-    elif opc==6:
-        salir()
-    else:
-        print("Hubo un error")
+    match opc:
+        case 1:
+            aprobado()
+        case 2:
+            promedio()
+        case 3:
+            mayores()
+        case 4:
+            print("\nTus notas son: ")
+            for i in range(len(notas)):
+                print(notas[i])
+        case 5:
+            verificacion()
+        case 6:
+            salir()
+        case _:
+            print("Hubo un error")
