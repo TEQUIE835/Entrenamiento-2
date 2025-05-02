@@ -8,7 +8,8 @@ a. pedir una calificacion del 1 al 100
 b. verificar si esta aprobado o no
 
 # 2-calcular promedio
-a. pedir una lista de notas \n
+a. pedir una lista de notas 
+#
 b.Calcular y mostrar el promedio de las notas
 # 3-Contar calificaciones mayores
 a. Pedir un valor al usuario
