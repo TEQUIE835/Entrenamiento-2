@@ -53,7 +53,7 @@ def aprobado():
 def promedio():
     prom = 0
     for i in range(len(notas)):
-        prom+= notas[1]
+        prom+= notas[i]
     prom = prom/n
     print(f"\nTu promedio es: {prom}")
     if prom>= 60:
